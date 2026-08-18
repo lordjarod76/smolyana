@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Смольяна — Мастерская иконной вышивки Екатерины Москвиной</title>
+    <!-- Фавикон из нового логотипа -->
+    <link rel="icon" href="2121.png" type="image/png">
+    
+    <!-- SEO Мета-теги с ключевыми запросами -->
+    <meta name="description" content="Эксклюзивные иконы в современном интерьере. Дорогие иконы с драгоценными камнями, жемчугом и кристаллами Swarovski. Рукописные, вышитые бисером иконы на заказ. Икона в кабинет руководителя, в подарок шефу или чиновнику. Премиальные иконы для интерьера квартиры, дома или офиса. Освященные иконы по канонам.">
+    <meta name="keywords" content="икона в интерьере, икона в современном интерьере, икона в дизайне интерьера, икона в интерьере квартиры, икона в современном доме, икона как элемент интерьера, икона в минималистичном интерьере, икона в монохромном интерьере, куда повесить икону в квартире, размещение икон в доме, икона для кабинета, икона в кабинет руководителя, дорогая икона в подарок, икона в подарок руководителю, икона в подарок шефу, эксклюзивная икона, презентабельная икона, элитная икона, икона на стол руководителя, икона с драгоценными камнями, икона с жемчугом и стразами, ювелирная икона, рукописная икона, икона по канонам, вышитая икона бисером, икона с полудрагоценными камнями, освященная икона, икона Ангела Хранителя для кабинета, икона Николая Чудотворца в подарок, купить икону, икона на заказ, православная икона">
+    
+    <style>
+        /* ===== СБРОС И БАЗОВЫЕ ПЕРЕМЕННЫЕ ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --gold: #B9914B;
+            --dark-gold: #8B6914;
+            --ruby: #9B2D30;
+            --bg-linen: #F5F0E6;
+            --bg-dark: #1A1514;
+            --text-dark: #2C2416;
+            --text-light: #E8DFD3;
+            --text-muted: #8A8070;
+            --font-heading: 'Playfair Display', 'Georgia', serif;
+            --font-body: 'Cormorant Garamond', 'Garamond', serif;
+            --font-ui: 'Raleway', 'Arial', sans-serif;
+            --spacing-sm: 20px;
+            --spacing-md: 40px;
+            --spacing-lg: 80px;
+            --spacing-xl: 120px;
+            --max-width: 1200px;
+            --border-gold: 1px solid var(--gold);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-linen);
+            color: var(--text-dark);
+            font-family: var(--font-body);
+            font-size: 18px;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ===== ТИПОГРАФИКА ===== */
+        h1, h2, h3, h4 {
+            font-family: var(--font-heading);
+            font-weight: 400;
+            color: var(--text-dark);
+        }
+
+        h1 {
+            font-size: clamp(42px, 7vw, 72px);
+            line-height: 1.1;
+            letter-spacing: 0.02em;
+        }
+
+        h2 {
+            font-size: clamp(32px, 5vw, 48px);
+            text-align: center;
+            margin-bottom: var(--spacing-lg);
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 1px;
+            background: var(--gold);
+            margin: 20px auto 0;
+        }
+
+        h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .gold-text {
+            color: var(--gold);
+        }
+
+        .muted-text {
+            color: var(--text-muted);
+            font-family: var(--font-ui);
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* ===== КНОПКИ ===== */
+        .btn {
+            display: inline-block;
+            padding: 16px 48px;
+            font-family: var(--font-ui);
+            font-size: 13px;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            border: 1px solid transparent;
+            background: transparent;
+        }
+
+        .btn-gold {
+            border: var(--border-gold);
+            color: var(--gold);
+        }
+
+        .btn-gold:hover {
+            background: var(--gold);
+            color: #fff;
+        }
+
+        .btn-light {
+            border: 1px solid rgba(255,255,255,0.5);
+            color: #fff;
+        }
+
+        .btn-light:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: #fff;
+        }
+
+        .btn-dark {
+            background: var(--text-dark);
+            border: 1px solid var(--text-dark);
+            color: var(--bg-linen);
+        }
+
+        .btn-dark:hover {
+            background: transparent;
+            color: var(--text-dark);
+        }
+
+        .btn-full {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* ===== КОНТЕЙНЕР ===== */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+
+        /* ===== СЕКЦИИ ===== */
+        .section {
+            padding: var(--spacing-xl) 0;
+        }
+
+        .section-dark {
+            background: var(--bg-dark);
+            color: var(--text-light);
+        }
+
+        .section-dark h2,
+        .section-dark h3,
+        .section-dark h4 {
+            color: var(--text-light);
+        }
+
+        .section-dark h2::after {
+            background: var(--gold);
+        }
+
+        /* ===== 1. ГЛАВНЫЙ ЭКРАН (Параллакс) ===== */
+        .hero {
+            position: relative;
+            height: 100vh;
+            min-height: 600px;
+            background: url('https://sun9-80.vkuserphoto.ru/s/v1/ig2/rNLd6CUb3p7Qk10CqqNBGuswUsDeb5_RPgxXDRE-pWxC83FsHtzrd4hOqItFRsbtIEToiPMIuhXExZj2PLHUN6_X.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,1080x1440,1280x1707,1440x1920,1920x2560&from=bu&cs=1920x0') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(ellipse at center, rgba(26,21,20,0.4) 0%, rgba(26,21,20,0.85) 70%);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-logo {
+            display: inline-block;
+            max-width: 320px;
+            width: 85%;
+            margin-bottom: var(--spacing-lg);
+            border-radius: 4px;
+            padding: 6px 10px;
+        }
+
+        .hero-logo img {
+            display: block;
+            width: 100%;
+            height: auto;
+            filter: drop-shadow(0 4px 16px rgba(0,0,0,0.5));
+        }
+
+        .hero h1 {
+            color: #fff;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .hero .hero-subtitle {
+            font-family: var(--font-body);
+            font-size: 40px;
+            font-style: italic;
+            color: rgba(255,255,255,0.7);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        /* ===== 2. О МАСТЕРЕ ===== */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-lg);
+            align-items: center;
+        }
+
+        .about-image {
+            width: 100%;
+            aspect-ratio: 3/4;
+            background: url('https://sun9-52.vkuserphoto.ru/s/v1/ig2/jEEsCCJPQA833zifw_TX1O6ymhD4fryVsXsH751uIX7loafPq_TDvxboZVmK_lCYDRX_ka-0VjD08zokAD8gwP8h.jpg?quality=95&as=32x34,48x52,72x77,108x116,160x172,240x258,360x387,480x517,540x581,640x689,720x775,1080x1162,1280x1377,1440x1550,2379x2560&from=bu&u=kjzdNczjl_9gc2bI9UfzwvkZOJM2HLh1qfG_st2vJ0E&cs=1280x0') center/cover no-repeat;
+            border: 1px solid rgba(0,0,0,0.05);
+            border-radius: 4px;
+        }
+
+        .about-text p {
+            margin-bottom: 1.2rem;
+        }
+
+        .about-text .signature {
+            font-style: italic;
+            color: var(--text-muted);
+            margin-top: var(--spacing-sm);
+        }
+
+        /* ===== 4. КАРТОЧКА ТОВАРА (ГАЛЕРЕЯ) ===== */
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-lg);
+            align-items: start;
+        }
+
+        .product-gallery {
+            position: relative;
+        }
+
+        .product-gallery .main-image {
+            width: 100%;
+            aspect-ratio: 1/1;
+            background: url('https://sun9-87.vkuserphoto.ru/s/v1/ig2/epNk-ey_5izQJozwU2-XDCi7FuVLozpT6Ffrmt98a6Xx0YR72qSVZM6sJ4tBY2C-n0obeHlVCNCvu-PDftyFPI_X.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,1080x1440,1280x1707,1440x1920,1920x2560&from=bu&cs=1920x0') center/cover no-repeat;
+            border: 1px solid rgba(0,0,0,0.05);
+            margin-bottom: 10px;
+            transition: background-image 0.4s ease;
+        }
+
+        .product-gallery .thumbnails {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .product-gallery .thumb {
+            width: 80px;
+            height: 80px;
+            border: 1px solid rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: border-color 0.3s, transform 0.2s;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .product-gallery .thumb:hover {
+            border-color: var(--gold);
+            transform: scale(1.05);
+        }
+
+        .product-gallery .thumb:nth-child(1) { background-image: url('https://sun9-87.vkuserphoto.ru/s/v1/ig2/epNk-ey_5izQJozwU2-XDCi7FuVLozpT6Ffrmt98a6Xx0YR72qSVZM6sJ4tBY2C-n0obeHlVCNCvu-PDftyFPI_X.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,1080x1440,1280x1707,1440x1920,1920x2560&from=bu&cs=1920x0'); }
+        .product-gallery .thumb:nth-child(2) { background-image: url('https://sun9-83.vkuserphoto.ru/s/v1/ig2/PvO5wtPaIaQbzVAdis5juOfVJxwcYVe97Tycb3YV9-5qstIzlCB8E6NoqFmWhebyL4CklpAHGFGL2-1I5NFXY9k0.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,1080x1440,1280x1707,1440x1920,1920x2560&from=bu&cs=1920x0'); }
+        .product-gallery .thumb:nth-child(3) { background-image: url('https://sun9-76.vkuserphoto.ru/s/v1/ig2/VfukE5XRc4ax4dhue7Nhszn1WKWR6-4n5T4UKml_T3IwMY45WuC4SCVtHdlnAvgwA9qdgMkj_bIovyB7soLdumZm.jpg?quality=95&as=32x57,48x85,72x128,108x192,160x284,240x427,360x640,480x853,540x960,640x1138,720x1280,1080x1920,1280x2276,1440x2560&from=bu&cs=1440x0'); }
+        .product-gallery .thumb:nth-child(4) { background-image: url('https://sun9-36.vkuserphoto.ru/s/v1/ig2/Qwqx_PevdDtaDorfFw4HZOsAQnqGSVbFRDng13Mjs9QpUjgJgKjs-2U_9zRxQTOnazwhjgRZ8ySO1ExHs8dAAUMS.jpg?quality=95&as=32x57,48x85,72x128,108x192,160x284,240x427,360x640,480x853,540x960,640x1138,720x1280,1080x1920,1280x2276,1440x2560&from=bu&cs=1440x0'); }
+        .product-gallery .thumb:nth-child(5) { background-image: url('https://sun9-74.vkuserphoto.ru/s/v1/ig2/F0QBdwssp-Rv6lTNvqyCUWk0gEl49_shgCjhQ3wLbgoBr6BArRY0yYwOd5OzaVD0491ZOam-c0AbNYzCy3hUob0r.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,1080x1440,1280x1707,1440x1920,1920x2560&from=bu&cs=1920x0'); }
+        .product-gallery .thumb:nth-child(6) { background-image: url('https://sun9-61.vkuserphoto.ru/s/v1/ig2/ZGEMmPUXakjLCgKIc9vmP9-Pw0D1_rDk8mXBV_F02c506OoPbkeLlSVaG5G0YeOE8FYrPeNILTxx6IVxF-KsVxXY.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,1080x1440,1280x1707,1440x1920,1920x2560&from=bu&cs=1920x0'); }
+        .product-gallery .thumb:nth-child(7) { background-image: url('https://sun9-55.vkuserphoto.ru/s/v1/ig2/M4pPi7E7ufJnFKsoF4SGyBWyeqWEAyoP4szwaOvt0YjsxOk7HuNRbiwFgiyMPeHDSM3lgWHvguo471S0SnCFc_Wv.jpg?quality=95&as=32x57,48x85,72x128,108x192,160x284,240x427,360x640,480x853,540x960,640x1138,720x1280,1080x1920,1280x2276,1440x2560&from=bu&cs=1440x0'); }
+        .product-gallery .thumb:nth-child(8) { background-image: url('https://sun9-67.vkuserphoto.ru/s/v1/ig2/dUQlSuQ_m1CmSTrJ-rTiSeV4Nf7OMUqYUI5A2mJRHYKbqbBpP73E4oVVc5AeQLXt8Ir6Gs7kbDL5tZrHJbUvS272.jpg?quality=95&as=32x36,48x55,72x82,108x123,160x182,240x274,360x410,480x547,540x615,640x729,720x821,1080x1231,1280x1459,1440x1641,2246x2560&from=bu&cs=2246x0'); }
+        .product-gallery .thumb:nth-child(9) { background-image: url('https://sun9-59.vkuserphoto.ru/s/v1/ig2/bDLxOp_CQvgPRbdlX8BVzWQJ6n1ymBPexVP9clk_vDpnGU2HfXkRX6FJGdCNz79g7u-qziJYAoimD9YUsumcmYmq.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,1080x1440,1280x1707,1440x1920,1920x2560&from=bu&cs=1920x0'); }
+        .product-gallery .thumb:nth-child(10) { background-image: url('https://sun9-73.vkuserphoto.ru/s/v1/ig2/k5TY9gezXlKl_t7suksio-ufjlmA-T9tK5Iav7Rs01vdyiPJCUUdb5llGjeh_A7lF5yiGbhViNEpSN7ypu9EBhQ2.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,1080x1440,1280x1707,1440x1920,1920x2560&from=bu&cs=1920x0'); }
+        .product-gallery .thumb:nth-child(11) { background-image: url('https://sun9-2.vkuserphoto.ru/s/v1/ig2/Bb2YNmZfGx2r-1GEx2kpUtuq4LiJd9EsP-efPzg0FZfypzhIuvzdpVDKD-yxBA4ruj3iMDQzAsGfxeT-A20Mv3VL.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,1080x1440,1086x1448&from=bu&cs=1086x0'); }
+
+        .product-info .product-title {
+            font-family: var(--font-heading);
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .product-info .product-description {
+            font-size: 17px;
+            line-height: 1.7;
+            margin-bottom: 25px;
+            color: var(--text-dark);
+        }
+
+        .product-info .product-description strong {
+            color: var(--dark-gold);
+            font-weight: 600;
+        }
+
+        .product-info .product-price {
+            font-family: var(--font-heading);
+            font-size: 32px;
+            color: var(--dark-gold);
+            margin-bottom: 15px;
+        }
+
+        .product-info .price-note {
+            font-size: 15px;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 25px;
+        }
+
+        .product-specs {
+            list-style: none;
+            margin-bottom: 30px;
+            padding: 0;
+        }
+
+        .product-specs li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            font-size: 16px;
+        }
+
+        .product-specs li strong {
+            display: inline-block;
+            width: 160px;
+            font-family: var(--font-ui);
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+
+        .product-extras {
+            margin-top: 20px;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .product-extras label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .product-extras input[type="checkbox"] {
+            accent-color: var(--gold);
+            width: 18px;
+            height: 18px;
+        }
+
+        /* ===== 5. ЭТАПЫ ===== */
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--spacing-md);
+            text-align: center;
+        }
+
+        .step-card .step-image {
+            width: 100%;
+            aspect-ratio: 1/1;
+            margin-bottom: 15px;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .step-card .step-title {
+            font-family: var(--font-heading);
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .step-card .step-desc {
+            font-size: 14px;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        /* ===== 5.1 ВИДЕО-БЛОК ===== */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-lg);
+        }
+
+        .video-item {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+            background: #0a0808;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .video-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 16px 50px rgba(0,0,0,0.5);
+        }
+
+        .video-item iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* ===== 6. ИКОНЫ В ИНТЕРЬЕРЕ ===== */
+        .interior-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--spacing-md);
+        }
+
+        .interior-grid .interior-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 4px;
+            aspect-ratio: 3/4;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .interior-grid .interior-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+        }
+
+        /* ===== 7. КОНТАКТЫ ===== */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-lg);
+        }
+
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 15px;
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            font-family: var(--font-body);
+            font-size: 16px;
+            color: #fff;
+            transition: border-color 0.3s;
+        }
+
+        .contact-form input::placeholder,
+        .contact-form select::placeholder,
+        .contact-form textarea::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+            opacity: 1;
+        }
+
+        .contact-form input:focus,
+        .contact-form select:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: var(--gold);
+        }
+
+        .contact-form textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .contact-form select option {
+            background-color: #2a2420;
+            color: #d0c8c0;
+        }
+
+        .contact-info a {
+            color: var(--gold);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: var(--dark-gold);
+            text-decoration: underline;
+        }
+
+        .contact-info p {
+            margin-bottom: 15px;
+        }
+
+        /* Стили для строк с иконками */
+        .contact-info .contact-row {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 10px;
+        }
+
+        .contact-info .contact-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            color: var(--gold);
+            font-size: 18px;
+            transition: background 0.3s, border-color 0.3s;
+        }
+
+        .contact-info .contact-icon svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+        }
+
+        .contact-info .contact-row:hover .contact-icon {
+            background: rgba(185, 145, 75, 0.15);
+            border-color: var(--gold);
+        }
+
+        .contact-info .contact-link {
+            color: var(--gold);
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 17px;
+        }
+
+        .contact-info .contact-link:hover {
+            color: var(--dark-gold);
+            text-decoration: underline;
+        }
+
+        /* Стили для строк соцсетей */
+        .contact-info .social-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+
+        .contact-info .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.08);
+            transition: background 0.3s, transform 0.2s;
+            text-decoration: none;
+            color: var(--gold);
+            font-size: 18px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .contact-info .social-icon:hover {
+            background: rgba(185, 145, 75, 0.2);
+            transform: scale(1.1);
+            border-color: var(--gold);
+        }
+
+        .contact-info .social-icon svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+        }
+
+        .contact-info .social-link-text {
+            color: var(--gold);
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 17px;
+        }
+
+        .contact-info .social-link-text:hover {
+            color: var(--dark-gold);
+            text-decoration: underline;
+        }
+
+        /* ===== 8. ПОДВАЛ ===== */
+        .footer {
+            background: var(--bg-dark);
+            color: rgba(255,255,255,0.5);
+            text-align: center;
+            padding: var(--spacing-md);
+            font-family: var(--font-ui);
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+
+        .footer a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== ЯКОРЬ ДЛЯ ПРОКРУТКИ С ГЛАВНОГО ЭКРАНА ===== */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            animation: bounce 2s infinite;
+        }
+
+        .scroll-indicator span {
+            display: block;
+            width: 1px;
+            height: 40px;
+            background: rgba(255,255,255,0.4);
+            margin: 0 auto 5px;
+        }
+
+        .scroll-indicator small {
+            font-family: var(--font-ui);
+            font-size: 10px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.4);
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-10px); }
+            60% { transform: translateX(-50%) translateY(-5px); }
+        }
+
+        /* ===== АДАПТИВ ===== */
+        @media (max-width: 768px) {
+            .about-grid,
+            .product-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .steps-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .interior-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .section {
+                padding: var(--spacing-lg) 0;
+            }
+
+            .hero-logo {
+                max-width: 220px;
+                padding: 4px 6px;
+            }
+
+            .product-specs li strong {
+                width: 120px;
+            }
+
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero .hero-subtitle {
+                font-size: 28px;
+            }
+
+            .contact-info .contact-row,
+            .contact-info .social-row {
+                gap: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .interior-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ========== 1. ГЛАВНЫЙ ЭКРАН ========== -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-logo">
+                <img src="2121.png" alt="Смольяна — Мастерская иконной вышивки">
+            </div>
+            <h1>Душа Вашего пространства</h1>
+            <p class="hero-subtitle">Мастерская иконной вышивки Екатерины Москвиной<br>Бисер, жемчуг, полудрагоценные камни</p>
+            <a href="#product" class="btn btn-gold">Смотреть образы</a>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+            <small>Листайте вниз</small>
+        </div>
+    </section>
+
+    <!-- ========== 2. О МАСТЕРЕ ========== -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2>О мастерской &laquo;Смольяна&raquo;</h2>
+            <div class="about-grid">
+                <div class="about-image" role="img" aria-label="Фото мастера Екатерины Москвиной"></div>
+                <div class="about-text">
+                    <p><strong>Давайте знакомиться!</strong></p>
+                    <p>Я Екатерина, и наша иконописная мастерская работает уже более 20 лет! Многие из наших произведений находятся в частных коллекциях, храмах по всей России и за её пределами, в том числе в Троице-Сергиевой лавре и администрации президента.</p>
+                    <p>Мы не работаем по схемам и шаблонам. Наши иконы - это чистое искусство, бисерная медитация, тонкая ювелирная работа, но с соблюдением основных иконописных канонов!</p>
+                    <p>Всё, от идеи до реализации, создано руками наших профессиональных мастеров. Без использования нейросетей, машинной вышивки или печати. Лики расписываются тонкими кисточками, каждый стежок, каждая бусинка пришивается ювелирными инструментами.</p>
+                    <p>Мы искренне считаем, что икона дома — это не только символ веры, но и драгоценный поддерживающий образ, согревающий любой интерьер. Давайте любоваться искусством вместе!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 3. КАРТОЧКА ТОВАРА ========== -->
+    <section class="section" id="product">
+        <div class="container">
+            <h2>Актуальная коллекция</h2>
+            <div class="product-grid">
+                <div class="product-gallery">
+                    <div class="main-image" id="mainImage" role="img" aria-label="Казанская икона Божией Матери"></div>
+                    <div class="thumbnails" id="thumbnailsContainer">
+                        <!-- Миниатюры будут созданы скриптом -->
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Казанская икона Божией Матери</h3>
+                    
+                    <p class="product-description">
+                        Рады представить вам нашу новую работу — Казанскую икону Божией Матери.
+                        <br><br>
+                        <strong>Казанская икона Божией Матери</strong> — один из самых почитаемых образов, символ защиты, заступничества и материнской любви.
+                        <br><br>
+                        При создании данной работы мы использовали <strong>Чешский золоченый бисер Preciosa</strong>, натуральный речной жемчуг, агат, а также кристаллы Swarovski.
+                        <br><br>
+                        Фундаментом послужила тканевая основа с расписным ликом.
+                    </p>
+
+                    <p class="product-price">250 000 ₽</p>
+                    <p class="price-note">* Окончательная сумма зависит от размера и запроса. Дополнительную информацию можно узнать, связавшись с нами.</p>
+
+                    <ul class="product-specs">
+                        <li><strong>Материалы</strong> Галерейный подрамник, репинский холст, темперные краски, защитный матовый лак, чешский бисер Preciosa, стеклярус, рубка, натуральный речной жемчуг, агат, кристаллы Swarovski, багет интерьерный.</li>
+                        <li><strong>Размер готовой иконы</strong> 50 × 60 см</li>
+                        <li><strong>Размер без рамы</strong> 40 × 50 см</li>
+                        <li><strong>Время создания</strong> 3 месяца ручного труда</li>
+                    </ul>
+
+                    <a href="#contact" class="btn btn-dark btn-full">Приобрести Икону</a>
+                    <div class="product-extras">
+                        <label>
+                            <input type="checkbox"> Прошу освятить образ перед отправкой
+                        </label>
+                        <p>✓ Бесплатная доставка в подарочном ковчеге</p>
+                        <p>✓ Сертификат мастерской с перечнем материалов</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 4. ПРОЦЕСС СОЗДАНИЯ ========== -->
+    <section class="section section-dark" id="process">
+        <div class="container">
+            <h2>Детали и процесс</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-image" style="background-image: url('https://sun9-61.vkuserphoto.ru/s/v1/ig2/ZGEMmPUXakjLCgKIc9vmP9-Pw0D1_rDk8mXBV_F02c506OoPbkeLlSVaG5G0YeOE8FYrPeNILTxx6IVxF-KsVxXY.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,1080x1440,1280x1707,1440x1920,1920x2560&from=bu&cs=1920x0');" role="img" aria-label="Этап 1"></div>
+                    <h4 class="step-title">Каждый элемент вышивки выполнен вручную</h4>
+                    <p class="step-desc"></p>
+                </div>
+                <div class="step-card">
+                    <div class="step-image" style="background-image: url('https://sun9-74.vkuserphoto.ru/s/v1/ig2/F0QBdwssp-Rv6lTNvqyCUWk0gEl49_shgCjhQ3wLbgoBr6BArRY0yYwOd5OzaVD0491ZOam-c0AbNYzCy3hUob0r.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,1080x1440,1280x1707,1440x1920,1920x2560&from=bu&cs=1920x0');" role="img" aria-label="Этап 2"></div>
+                    <h4 class="step-title">Лики выполнены темперными красками с соблюдением всех канонов</h4>
+                    <p class="step-desc"></p>
+                </div>
+                <div class="step-card">
+                    <div class="step-image" style="background-image: url('https://sun9-55.vkuserphoto.ru/s/v1/ig2/M4pPi7E7ufJnFKsoF4SGyBWyeqWEAyoP4szwaOvt0YjsxOk7HuNRbiwFgiyMPeHDSM3lgWHvguo471S0SnCFc_Wv.jpg?quality=95&as=32x57,48x85,72x128,108x192,160x284,240x427,360x640,480x853,540x960,640x1138,720x1280,1080x1920,1280x2276,1440x2560&from=bu&cs=1440x0');" role="img" aria-label="Этап 3"></div>
+                    <h4 class="step-title">Натуральный жемчуг, камни и кристаллы создают сияющий, объемный эффект</h4>
+                    <p class="step-desc"></p>
+                </div>
+                <div class="step-card">
+                    <div class="step-image" style="background-image: url('https://sun9-27.vkuserphoto.ru/s/v1/ig2/rzXOUo4NhZd83E8JZft6C6oOlscRS17eNG21U1FRUMrUxFvXCOnuBRAZm20fhLfB8Shuy3K4gmZ3eTunImN2z6GS.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x239,360x359,480x479,540x539,640x638,720x718,770x768&from=bu&cs=770x0');" role="img" aria-label="Этап 4"></div>
+                    <h4 class="step-title">20-ти летний опыт работы с вниманием к деталям</h4>
+                    <p class="step-desc"></p>
+                </div>
+            </div>
+
+            <!-- ВИДЕО-БЛОК С KINESCOPE И VK -->
+            <div class="video-grid">
+                <div class="video-item" style="padding-bottom: 177.78%;">
+                    <iframe src="https://kinescope.io/embed/g9nG7GzuAzyQtNd4vBe9AM" allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-item" style="padding-bottom: 177.78%;">
+                    <iframe src="https://kinescope.io/embed/upQSrKnWsv9uc9tkjTu6uj" allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-item" style="padding-bottom: 177.78%;">
+                    <iframe src="https://kinescope.io/embed/qLuddAG23NzmpTPoH6Kxok" allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-item" style="padding-bottom: 177.78%;">
+                    <iframe src="https://vk.com/video_ext.php?oid=-240747628&id=456239022&hash=1f6e6c4b7e9a3d8f" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 5. ИКОНЫ В ИНТЕРЬЕРЕ ========== -->
+    <section class="section" id="interior">
+        <div class="container">
+            <h2>Иконы в интерьере</h2>
+            <div class="interior-grid">
+                <div class="interior-item" style="background-image: url('https://sun1-27.vkuserphoto.ru/s/v1/ig2/z9GE33HsotN-VMR7DsP4mxxF1VkoIl-bLA_CpqevvbYeuBHKHEnwePTlLfAzIKNgBYUNF58uLA0t1d-XMn_L4fcu.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,1080x1440,1086x1448&from=bu&cs=1086x0');"></div>
+                <div class="interior-item" style="background-image: url('https://sun9-63.vkuserphoto.ru/s/v1/ig2/3nYlKb55swBybn7rsfUgx0rjtKfcp-f1021dxTGapHbM0lRVjdNUMvr1uWZJRdpMMigdMCsslZyonmGmRStMTL0w.jpg?quality=95&as=32x39,48x59,72x88,108x133,160x196,240x295,360x442,480x589,540x663,640x786,720x884,912x1120&from=bu&cs=912x0');"></div>
+                <div class="interior-item" style="background-image: url('https://sun9-34.vkuserphoto.ru/s/v1/ig2/NW-ThJPh7sP09mvUDuERetinF4_sZtdnLt0-BCesh_v7Cvv96J5TjkBVL9xA4d5OdXP8wVudyjMFsnS7y4j_qwHi.jpg?quality=95&as=32x41,48x62,72x93,108x139,160x206,240x309,360x463,480x617,540x694,640x823,720x926,896x1152&from=bu&cs=896x0');"></div>
+                <div class="interior-item" style="background-image: url('https://sun9-26.vkuserphoto.ru/s/v1/ig2/EQ5su2UUWhE1VxOq8vnFAm0xWey4iPUITwb4azb0fwBkK91V9q2Yn75r_5GOtMl7SFwnw2Mxih4n7od2kbnfWECk.jpg?quality=95&as=32x34,48x51,72x77,108x115,160x170,240x255,360x383,480x511,540x575,640x681,720x766,992x1056&from=bu&cs=992x0');"></div>
+                <div class="interior-item" style="background-image: url('https://sun9-33.vkuserphoto.ru/s/v1/ig2/cC7hKOnHBnd5y60Sgy3KIWilkg8ijWRiM19FHrLEL4cREmElq7dDwmthwylAnDpOsJhXA1PRlSFbIU3TVnuBL_PW.jpg?quality=95&as=32x41,48x62,72x93,108x139,160x206,240x309,360x463,480x617,540x694,640x823,720x926,896x1152&from=bu&cs=896x0');"></div>
+                <div class="interior-item" style="background-image: url('https://sun9-59.vkuserphoto.ru/s/v1/ig2/Q_2zmh30Tlnwb6lj6jThlEqopYjpROLvcY-tt1ez6ZDUQO7khVnNYHUScDAdcWpUMLliRcxfc2QUJ54zJLvgHJVw.jpg?quality=95&as=32x41,48x62,72x93,108x139,160x206,240x309,360x463,480x617,540x694,640x823,720x926,896x1152&from=bu&cs=896x0');"></div>
+                <div class="interior-item" style="background-image: url('https://sun9-27.vkuserphoto.ru/s/v1/ig2/JgvOoCXhq-zBX-QMoIZxWVpMfVXF0FrYA45HKtuLc_imPdaA-X4ucBtQ0ORajueUL-k4Iql9jobexZX4vPTBLHhD.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1024x1024&from=bu&cs=1024x0');"></div>
+                <div class="interior-item" style="background-image: url('https://sun9-34.vkuserphoto.ru/s/v1/ig2/oRwHsBf4LOI2hbDLDCnCAf-MkDSHaSUOx3Torgvjv2y80tMV-ilcNOQDuPi5ZU5fQUGcBhhLCRNdjTHEA0-p6l2c.jpg?quality=95&as=32x44,48x66,72x99,108x148,160x219,240x329,360x493,480x658,540x740,640x877,720x987,864x1184&from=bu&cs=864x0');"></div>
+                <div class="interior-item" style="background-image: url('https://sun9-64.vkuserphoto.ru/s/v1/ig2/pyRlf_83pngByc5oNlwbfsQ4sFnb9F1BiGeMW5pIkCMLltTdrQxOLOBYfzHNzrPsOfl1M2qe4lpz3wZa1aP1PUA5.jpg?quality=95&as=32x44,48x66,72x99,108x148,160x219,240x329,360x493,480x658,540x740,640x877,720x987,864x1184&from=bu&cs=864x0');"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 6. КОНТАКТЫ ========== -->
+    <section class="section section-dark" id="contact">
+        <div class="container">
+            <h2>Заказать икону или задать вопрос</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p>Сейчас в мастерской &laquo;Смольяна&raquo; нет поточного производства. Мы можем работать только над 2–3 образами одновременно, чтобы сохранить качество.</p>
+                    <p>Если вы хотите приобрести готовую икону из наличия или обсудить создание именного образа, напишите мне лично. Я отвечу в течение дня.</p>
+                    <br>
+                    
+                    <p class="muted-text">Телефон</p>
+                    <div class="contact-row">
+                        <span class="contact-icon">
+                            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                        </span>
+                        <a href="tel:+79063468739" class="contact-link">+7 (906) 346-87-39</a>
+                    </div>
+                    
+                    <p class="muted-text">Email</p>
+                    <div class="contact-row">
+                        <span class="contact-icon">
+                            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        </span>
+                        <a href="mailto:smolyana.ikona@bk.ru" class="contact-link">smolyana.ikona@bk.ru</a>
+                    </div>
+                    
+                    <p class="muted-text">Telegram</p>
+                    <div class="social-row">
+                        <a href="https://t.me/Kat_63" target="_blank" class="social-icon" aria-label="Telegram">
+                            <svg viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                        </a>
+                        <a href="https://t.me/Kat_63" target="_blank" class="social-link-text">t.me/Kat_63</a>
+                    </div>
+                    
+                    <p class="muted-text">VK</p>
+                    <div class="social-row">
+                        <a href="https://vk.com/smolyana.ikona" target="_blank" class="social-icon" aria-label="VK">
+                            <svg viewBox="0 0 24 24"><path d="M21.579 11.982c-.416-.439-1.453-.958-2.632-1.513-.93-.438-1.333-.842-1.311-1.21.022-.313.261-.753.574-1.205.314-.452.738-1.088.94-1.436.12-.208.095-.417-.06-.575-.264-.256-.78-.317-1.09-.317h-1.713c-.314 0-.539.073-.717.323-.183.253-.246.534-.292.727-.275 1.152-.714 2.315-1.276 3.172-.342.521-.613.762-.892.762-.21 0-.385-.12-.48-.628-.13-.693-.178-1.573-.178-2.042 0-.708-.1-1.28-.466-1.745-.296-.379-.772-.589-1.371-.589h-1.62c-.764 0-1.221.453-1.221.96 0 .64.256 1.54.492 2.128.122.304.245.625.245.841 0 .508-.34.737-.829.737-1.285 0-2.5-1.729-2.94-3.164-.143-.465-.597-.946-1.16-.946H2.267c-.489 0-.707.301-.707.657 0 .32.174.757.919 1.785 1.087 1.503 2.74 2.98 4.67 3.921 1.532.746 3.504 1.143 5.209 1.143 1.53 0 2.496-.316 2.741-1.128.137-.452.178-.731.403-1.081.204-.318.604-.433 1.009-.279.45.171.86.502 1.291 1.025.444.54.958.857 1.466.857h1.432c.503 0 .802-.213.802-.672 0-.304-.225-.693-.662-1.148z"/></svg>
+                        </a>
+                        <a href="https://vk.com/smolyana.ikona" target="_blank" class="social-link-text">vk.com/smolyana.ikona</a>
+                    </div>
+                    
+                    <p class="muted-text">Instagram</p>
+                    <div class="social-row">
+                        <a href="https://www.instagram.com/smolyana.ikona?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==&igsi=ZDNlZDc0MzIxNw==" target="_blank" class="social-icon" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/smolyana.ikona?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==&igsi=ZDNlZDc0MzIxNw==" target="_blank" class="social-link-text">Smolyana в Инстаграм</a>
+                    </div>
+                    
+                    <p class="muted-text">MAX</p>
+                    <div class="social-row">
+                        <a href="https://maxim.ru/u/f9LHodD0cOIKNcQ7CshZ50j8g0PecvwVUEozd9WBgUm7JCwrmEo4ue5Tigk" target="_blank" class="social-icon" aria-label="MAX" style="font-size:14px; font-weight:700; font-family:var(--font-ui);">M</a>
+                        <a href="https://maxim.ru/u/f9LHodD0cOIKNcQ7CshZ50j8g0PecvwVUEozd9WBgUm7JCwrmEo4ue5Tigk" target="_blank" class="social-link-text">Профиль на MAX</a>
+                    </div>
+                    
+                    <p class="muted-text">Мастерская</p>
+                    <p>г. Самара</p>
+                </div>
+                <form class="contact-form" action="#" method="POST">
+                    <input type="text" placeholder="Имя" required>
+                    <input type="text" placeholder="Телефон / Email" required>
+                    <select required>
+                        <option value="">Что вас интересует?</option>
+                        <option value="in_stock">Икона в наличии</option>
+                        <option value="custom">Именная икона на заказ</option>
+                        <option value="other">Другой вопрос</option>
+                    </select>
+                    <textarea placeholder="Ваше сообщение..." required></textarea>
+                    <button type="submit" class="btn btn-gold btn-full">Отправить Екатерине</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 7. ПОДВАЛ ========== -->
+    <footer class="footer">
+        <p>&copy; 2025 Мастерская иконной вышивки &laquo;Смольяна&raquo; Екатерины Москвиной. Все права защищены.</p>
+        <p>Иконы не являются массовой продукцией, а относятся к предметам сакрального искусства.</p>
+        <p><a href="#">Политика конфиденциальности</a> | <a href="#">Договор оферты</a></p>
+    </footer>
+
+    <script>
+        (function() {
+            // ===== ФОТО ДЛЯ ГАЛЕРЕИ ТОВАРА (НОВОЕ ФОТО ПЕРВЫМ) =====
+            const imageUrls = [
+                'https://sun9-87.vkuserphoto.ru/s/v1/ig2/epNk-ey_5izQJozwU2-XDCi7FuVLozpT6Ffrmt98a6Xx0YR72qSVZM6sJ4tBY2C-n0obeHlVCNCvu-PDftyFPI_X.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,1080x1440,1280x1707,1440x1920,1920x2560&from=bu&cs=1920x0',
+                'https://sun9-83.vkuserphoto.ru/s/v1/ig2/PvO5wtPaIaQbzVAdis5juOfVJxwcYVe97Tycb3YV9-5qstIzlCB8E6NoqFmWhebyL4CklpAHGFGL2-1I5NFXY9k0.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,1080x1440,1280x1707,1440x1920,1920x2560&from=bu&cs=1920x0',
+                'https://sun9-76.vkuserphoto.ru/s/v1/ig2/VfukE5XRc4ax4dhue7Nhszn1WKWR6-4n5T4UKml_T3IwMY45WuC4SCVtHdlnAvgwA9qdgMkj_bIovyB7soLdumZm.jpg?quality=95&as=32x57,48x85,72x128,108x192,160x284,240x427,360x640,480x853,540x960,640x1138,720x1280,1080x1920,1280x2276,1440x2560&from=bu&cs=1440x0',
+                'https://sun9-36.vkuserphoto.ru/s/v1/ig2/Qwqx_PevdDtaDorfFw4HZOsAQnqGSVbFRDng13Mjs9QpUjgJgKjs-2U_9zRxQTOnazwhjgRZ8ySO1ExHs8dAAUMS.jpg?quality=95&as=32x57,48x85,72x128,108x192,160x284,240x427,360x640,480x853,540x960,640x1138,720x1280,1080x1920,1280x2276,1440x2560&from=bu&cs=1440x0',
+                'https://sun9-74.vkuserphoto.ru/s/v1/ig2/F0QBdwssp-Rv6lTNvqyCUWk0gEl49_shgCjhQ3wLbgoBr6BArRY0yYwOd5OzaVD0491ZOam-c0AbNYzCy3hUob0r.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,1080x1440,1280x1707,1440x1920,1920x2560&from=bu&cs=1920x0',
+                'https://sun9-61.vkuserphoto.ru/s/v1/ig2/ZGEMmPUXakjLCgKIc9vmP9-Pw0D1_rDk8mXBV_F02c506OoPbkeLlSVaG5G0YeOE8FYrPeNILTxx6IVxF-KsVxXY.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,1080x1440,1280x1707,1440x1920,1920x2560&from=bu&cs=1920x0',
+                'https://sun9-55.vkuserphoto.ru/s/v1/ig2/M4pPi7E7ufJnFKsoF4SGyBWyeqWEAyoP4szwaOvt0YjsxOk7HuNRbiwFgiyMPeHDSM3lgWHvguo471S0SnCFc_Wv.jpg?quality=95&as=32x57,48x85,72x128,108x192,160x284,240x427,360x640,480x853,540x960,640x1138,720x1280,1080x1920,1280x2276,1440x2560&from=bu&cs=1440x0',
+                'https://sun9-67.vkuserphoto.ru/s/v1/ig2/dUQlSuQ_m1CmSTrJ-rTiSeV4Nf7OMUqYUI5A2mJRHYKbqbBpP73E4oVVc5AeQLXt8Ir6Gs7kbDL5tZrHJbUvS272.jpg?quality=95&as=32x36,48x55,72x82,108x123,160x182,240x274,360x410,480x547,540x615,640x729,720x821,1080x1231,1280x1459,1440x1641,2246x2560&from=bu&cs=2246x0',
+                'https://sun9-59.vkuserphoto.ru/s/v1/ig2/bDLxOp_CQvgPRbdlX8BVzWQJ6n1ymBPexVP9clk_vDpnGU2HfXkRX6FJGdCNz79g7u-qziJYAoimD9YUsumcmYmq.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,1080x1440,1280x1707,1440x1920,1920x2560&from=bu&cs=1920x0',
+                'https://sun9-73.vkuserphoto.ru/s/v1/ig2/k5TY9gezXlKl_t7suksio-ufjlmA-T9tK5Iav7Rs01vdyiPJCUUdb5llGjeh_A7lF5yiGbhViNEpSN7ypu9EBhQ2.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,1080x1440,1280x1707,1440x1920,1920x2560&from=bu&cs=1920x0',
+                'https://sun9-2.vkuserphoto.ru/s/v1/ig2/Bb2YNmZfGx2r-1GEx2kpUtuq4LiJd9EsP-efPzg0FZfypzhIuvzdpVDKD-yxBA4ruj3iMDQzAsGfxeT-A20Mv3VL.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,1080x1440,1086x1448&from=bu&cs=1086x0'
+            ];
+
+            const mainImage = document.getElementById('mainImage');
+            const container = document.getElementById('thumbnailsContainer');
+
+            if (imageUrls.length > 0) {
+                mainImage.style.backgroundImage = `url('${imageUrls[0]}')`;
+            }
+
+            imageUrls.forEach((url, index) => {
+                const thumb = document.createElement('div');
+                thumb.className = 'thumb';
+                thumb.style.backgroundImage = `url('${url}')`;
+                thumb.setAttribute('data-index', index);
+                thumb.setAttribute('role', 'img');
+                thumb.setAttribute('aria-label', `Миниатюра ${index + 1} иконы Казанской Божией Матери`);
+
+                thumb.addEventListener('click', function() {
+                    mainImage.style.backgroundImage = `url('${url}')`;
+                });
+
+                container.appendChild(thumb);
+            });
+        })();
+    </script>
+</body>
+</html>
