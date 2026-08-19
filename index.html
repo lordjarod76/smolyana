@@ -483,44 +483,6 @@
             gap: var(--spacing-lg);
         }
 
-        .contact-form input,
-        .contact-form select,
-        .contact-form textarea {
-            width: 100%;
-            padding: 14px;
-            margin-bottom: 15px;
-            background: transparent;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            font-family: var(--font-body);
-            font-size: 16px;
-            color: #fff;
-            transition: border-color 0.3s;
-        }
-
-        .contact-form input::placeholder,
-        .contact-form select::placeholder,
-        .contact-form textarea::placeholder {
-            color: rgba(255, 255, 255, 0.5);
-            opacity: 1;
-        }
-
-        .contact-form input:focus,
-        .contact-form select:focus,
-        .contact-form textarea:focus {
-            outline: none;
-            border-color: var(--gold);
-        }
-
-        .contact-form textarea {
-            min-height: 120px;
-            resize: vertical;
-        }
-
-        .contact-form select option {
-            background-color: #2a2420;
-            color: #d0c8c0;
-        }
-
         .contact-info a {
             color: var(--gold);
             text-decoration: none;
@@ -940,18 +902,6 @@
                     <p class="muted-text">Мастерская</p>
                     <p>г. Самара</p>
                 </div>
-                <form class="contact-form" action="#" method="POST">
-                    <input type="text" placeholder="Имя" required>
-                    <input type="text" placeholder="Телефон / Email" required>
-                    <select required>
-                        <option value="">Что вас интересует?</option>
-                        <option value="in_stock">Икона в наличии</option>
-                        <option value="custom">Именная икона на заказ</option>
-                        <option value="other">Другой вопрос</option>
-                    </select>
-                    <textarea placeholder="Ваше сообщение..." required></textarea>
-                    <button type="submit" class="btn btn-gold btn-full">Отправить Екатерине</button>
-                </form>
             </div>
         </div>
     </section>
